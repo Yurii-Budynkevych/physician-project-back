@@ -6,7 +6,7 @@ router.post("/", async (req, res, next) => {
   try {
     res.json({ message: "template message" });
   } catch (error) {
-    res.status(500).send("mailer error");
+    res.status(500).send("testimonials error");
   }
 });
 
