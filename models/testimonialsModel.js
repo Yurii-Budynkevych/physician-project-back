@@ -1,12 +1,15 @@
 const mongoose = require("mongoose");
 
-const testimonialSchema = mongoose.Schema({
-  name: String,
-  testimonial: String,
+const testimonialsDbSchema = mongoose.Schema({
+  name: { type: String, required: true, trim: true },
+  testimonial: { type: String, required: true, trim: true },
 });
 
-const sendTestimonial = async (body) => {};
+const TestimonialsDbModel = mongoose.model(
+  "testimonials",
+  testimonialsDbSchema
+);
 
 module.exports = {
-  sendTestimonial,
+  TestimonialsDbModel,
 };

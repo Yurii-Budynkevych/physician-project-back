@@ -1,13 +1,8 @@
 const express = require("express");
+const { sendEmail } = require("../../controllers/mailerControllers");
 
 const router = express.Router();
 
-router.post("/", async (req, res, next) => {
-  try {
-    res.json({ message: "template message" });
-  } catch (error) {
-    res.status(500).send("mailer error");
-  }
-});
+router.post("/", sendEmail);
 
 module.exports = router;
