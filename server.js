@@ -9,13 +9,13 @@ async function run() {
     console.log("Database connection successful");
 
     app.listen(3001, () => {
-      console.log("Server running. Use our API on port: 3000");
+      console.log("Server running. Use our API on port: 3001");
     });
   } catch (error) {
     console.error(error);
 
     app.listen(3001, () => {
-      console.log("Server running. Use our API on port: 3000");
+      console.log("Server running. Use our API on port: 3001");
     });
   }
 }
