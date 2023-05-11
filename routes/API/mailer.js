@@ -1,7 +1,6 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const Joi = require("joi");
-// dantax13@gmail.com
 
 const router = express.Router();
 
@@ -24,7 +23,7 @@ router.post("/", async (req, res, next) => {
 
   const message = {
     from: process.env.MAILER_API_USER,
-    to: "jyrka95@gmail.com",
+    to: "dantax13@gmail.com",
     subject: "Новий пацієнт ✔",
     text: `${name} записався на консультацію!
      Контактні дані: пошта - ${email}, телефон - ${tel}.
