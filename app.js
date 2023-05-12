@@ -2,8 +2,8 @@ const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
 
-const mailerRouter = require("./routes/api/mailer");
-const testimonialsRouter = require("./routes/api/testimonials");
+const mailerRouter = require("./routes/api/mailer.js");
+const testimonialsRouter = require("./routes/api/testimonials.js");
 
 const app = express();
 
